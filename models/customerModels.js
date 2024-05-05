@@ -4,9 +4,6 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const customerSchema = new Schema ({
-    _id: {
-        type: ObjectId
-    },
     username: {
         type: String,
         required: true

@@ -4,9 +4,6 @@ import { ObjectId } from "bson";
 const Schema = mongoose.Schema;
 
 const transactionsSchema = new Schema ({
-    _id: {
-        type: ObjectId
-    },
     account_id: {
         type: Number,
         required: true
