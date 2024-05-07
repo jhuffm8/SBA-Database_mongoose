@@ -44,6 +44,7 @@ const createAccount = async (req, res) => {
     }
 };
 
+// delete account by id
 const deleteAccount = async (req, res) => {
     const id = req.params.id;
 
@@ -59,6 +60,7 @@ const deleteAccount = async (req, res) => {
 
 };
 
+//update account like the limit and the products associated with account
 const updateAccount = async (req, res) => {
     const id = req.params.id;
 

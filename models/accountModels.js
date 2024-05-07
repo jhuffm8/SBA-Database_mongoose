@@ -1,4 +1,4 @@
-import { ObjectId } from "bson";
+
 import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
@@ -10,6 +10,8 @@ const accountSchema = new Schema ({
     },
     limit: {
         type: Number,
+        min: 100,
+        max:10000,
         default: 1000
     },
     products: {
